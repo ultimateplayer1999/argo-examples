@@ -27,6 +27,16 @@ kubectl port-forward service/argocd-server -n argocd 8080:443
 kubectl -n argocd get secret argocd-initial-admin-secret -o jsonpath="{.data.password}" | base64 -d
 ```
 
+### Test application
+```
+kubectl port-forward --address 0.0.0.0 service/<application-name> -n dev 8888:80
+```
+
+Change <application-name> to the actual application name in the main values yaml or the name in the specific env file. 
+```
+kubectl port-forward --address 0.0.0.0 service/argo-helmapp-dev -n dev 8888:800
+```
+
 # Install ArgoCD CLI / Login via CLI
 ```
 brew install argocd
