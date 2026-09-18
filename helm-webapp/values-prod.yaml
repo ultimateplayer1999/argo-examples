@@ -1,7 +1,8 @@
-appName: argo-helmapp-prod
+appName: argo-helm-demo-app-prod
 
 replicas: 4
 
 configmap:
+  name: argo-helm-demo-app-prod-configmap-v1
   data:
     CUSTOM_HEADER: 'This is on the PROD environment!'
