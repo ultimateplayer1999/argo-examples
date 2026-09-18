@@ -1,3 +1,4 @@
+appName: argo-helmapp-prod
 
 replicas: 4
 
