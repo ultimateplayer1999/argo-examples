@@ -1,4 +1,4 @@
-AppName: argo-helmapp-dev
+appName: argo-helmapp-dev
 replicas: 5
 
 configmap:
