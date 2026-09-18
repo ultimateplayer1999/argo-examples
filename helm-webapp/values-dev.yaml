@@ -1,6 +1,8 @@
-appName: argo-helmapp-dev
+appName: argo-helm-demo-app-dev
+
 replicas: 2
 
 configmap:
+  name: argo-helm-demo-app-dev-configmap-v1
   data:
     CUSTOM_HEADER: 'This is on the DEV environment!'
