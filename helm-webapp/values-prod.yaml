@@ -1,6 +1,6 @@
 appName: argo-helm-demo-app-prod
 
-replicas: 4
+replicas: 3
 
 configmap:
   name: argo-helm-demo-app-prod-configmap-v1
