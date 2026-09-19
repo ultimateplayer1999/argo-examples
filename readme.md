@@ -32,9 +32,9 @@ kubectl -n argocd get secret argocd-initial-admin-secret -o jsonpath="{.data.pas
 kubectl port-forward --address 0.0.0.0 service/<application-name> -n dev 8888:80
 ```
 
-Change <application-name> to the actual application name in the main values yaml or the name in the specific env file. 
+Change <application-name> to the actual application name in the main values yaml or the name in the specific env file. Like for example
 ```
-kubectl port-forward --address 0.0.0.0 service/argo-helmapp-dev -n dev 8888:800
+kubectl port-forward --address 0.0.0.0 service/argo-helm-demo-app-dev -n dev 8888:80
 ```
 
 # Install ArgoCD CLI / Login via CLI
